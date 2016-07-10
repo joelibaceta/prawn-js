@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{A small extension to prawn that simplifies embedding JavaScript in your PDF files}
   s.email = %q{pat@freelancing-gods.com}
   s.files = ""
-  s.files =  Dir.glob("{examples,lib}/**/**/*") +
+  s.files =  Dir.glob("{lib}/**/**/*") +
                       ["README.markdown","MIT-LICENSE", "CHANGELOG"]
   s.has_rdoc = true
   s.homepage = %q{http://ts.freelancing-gods.com}

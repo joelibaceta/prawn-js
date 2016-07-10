@@ -85,8 +85,6 @@ module Prawn
         names.data[:JavaScript] ||= ref!(Prawn::Core::NameTree::Node.new(self, NAME_TREE_CHILDREN_LIMIT))
       elsif defined? PDF::Core::NameTree
         names.data[:JavaScript] ||= ref!(PDF::Core::NameTree::Node.new(self, NAME_TREE_CHILDREN_LIMIT))
-      if defined? Prawn::NameTree
-        names.data[:JavaScript] ||= ref!(Prawn::NameTree::Node.new(self, NAME_TREE_CHILDREN_LIMIT))
       else
         raise "Can't find Prawn's NameTree!"
       end
